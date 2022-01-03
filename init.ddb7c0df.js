@@ -7,6 +7,6 @@ var r=require("./bundle-url").getBundleURL;function e(r){Array.isArray(r)||(r=[r
 },{"./bundle-url":"ARet"}],"OkSu":[function(require,module,exports) {
 module.exports=function(t){return fetch(t).then(function(t){return t.text()})};
 },{}],0:[function(require,module,exports) {
-var b=require("yU0Q");b.register("html",require("OkSu"));b.load([["navigation.7a623e8f.html","othv"]]).then(function(){require("n3wV");});
+var b=require("yU0Q");b.register("html",require("OkSu"));b.load([["navigation.fef2fc8a.html","othv"]]).then(function(){require("n3wV");});
 },{}]},{},[0], null)
 //# sourceMappingURL=/init.ddb7c0df.js.map
