@@ -3,7 +3,6 @@ id: 1
 title: "Lorem ipsum 1"
 subtitle: "Sed sit amet arcu a diam tincidunt porta"
 date: "2019.12.08"
-tags: "tag1, tag2"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet arcu a diam tincidunt porta. Fusce ut elit euismod massa convallis volutpat vitae et magna.

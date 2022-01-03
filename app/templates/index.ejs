@@ -18,10 +18,26 @@
   </header>
 
   <main id="main-container">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h1>
+      <span class="index-title">
+        <%- blogTitle %>
+      </span>
+    </h1>
+    <p class="index-description">
+      I am a <strong>Human Geography pre-master student</strong> at the Radboud University in Nijmegen.
+      I've previously worked as a Frontend Developer in England and Scotland.
+    </p>
+
+    <div class="index-navigation">
+      <a id="about" class="info-link" href="/about.html">About</a>
+      <a id="works" class="info-link" href="/works.html">Works</a>
+      <a id="articles" class="info-link" href="/articles.html">Articles</a>
+    </div>
+
+
   </main>
 
-  <script defer src="../src/ts/init.ts"></script>
+  <script defer src="../src/ts/index.ts"></script>
 </body>
 
 </html>

@@ -23,25 +23,30 @@
   }
 
   a {
+    border-bottom: 2px solid #3A86FF;
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    color: rgb(58, 134, 255);
+    transition: 0.1s;
+  }
+
+  a {
     &:hover,
-    &:focus,
-    &:hover li,
-    &:focus li {
-      background-color: black;
-      color: white;
+    &:focus {
+      color: #FB5607;
+      border-color: #FB5607;
     }
   }
 
-  .articles-tags {
-    margin: 0;
-
-    li {
-      float: left;
-      padding-right: 5px;
-      font-size: 12px;
-      font-weight: 100;
-    }
+  .article-date {
+    letter-spacing: -0.025em;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2d3748;
   }
+  
+
+
 }
 
 .articles-list-item {

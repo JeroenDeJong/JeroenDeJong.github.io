@@ -22,17 +22,9 @@
       <ul>
         <% articles.reverse().map((article) => { %>
           <li class="articles-list-item">
+            <div class="article-date"><%= article.date %></div>
             <a href="./article/<%= article.id %>.html">
-              <h1><%= article.title %></h1>
-              <% if (article.subtitle) { %>
-                <h2><%= article.subtitle %></h2>
-              <% } %>
-              <time><%= article.date %></time>
-              <ul class="articles-tags">
-                <% article.tags.map((tag) => { %>
-                  <li>#<%= tag.trim() %></li>
-                <% }) %>
-              </ul>
+              <%= article.title %>
             </a>
           </li>
         <% }) %>

@@ -1,13 +1,42 @@
-#main-emoji-container {
-  max-width: 350px;
-  width: 100%;
+
+
+.index-title {
+  --gradient-to-color: #FF006E;
+  --gradient-from-color: #FB5607;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(251, 86, 7, 0));
+  background-image: linear-gradient(to right, var(--gradient-color-stops));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  font-size: 40px; 
 }
 
-#main-emoji {
-  width: 100%;
+.index-description {
+  margin-top: 0.5em;
+  color: #4a5568;
+
+  strong {
+    color: black;
+  }
 }
 
-#github-heatmap {
-  width: 100%;
-  max-width: 800px;
+.index-navigation {
+  margin: 2em;
+  width: min-content;
+
+  .info-link {
+    color: black;
+    display: block;
+    padding: 0.25em;
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: 5px solid black;
+  
+    &:hover, &:focus {
+      border-bottom: 5px solid #FB5607;
+      transition: 0.2s;
+      color: #FB5607;
+    }
+  }
 }
