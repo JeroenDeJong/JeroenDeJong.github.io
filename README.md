@@ -47,7 +47,6 @@ Handmade Blog is a lightweight static blog generator for people who want to star
       "blogTitle": "Betty Grof",
       "blogSubtitle": "Oh My Glob",
       "article": {
-        "tableOfContents": true 
       }
     }
     ```
