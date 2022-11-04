@@ -1,0 +1,26 @@
+{
+  "articles": [
+    {
+      "id": 0,
+      "title": "South Ossetia and Violence",
+      "subtitle": "subtitle TBD",
+      "date": "2012-04-23T18:25:43.511Z", 
+      "data": {
+        "pdfUrl": "/assets/Debate_on_violence_Instrumentalism.pdf",
+        "remoteUrl": null
+      },
+      "tags": ["South Ossetia", "Violence", "Radboud University"]
+    },
+    {
+      "id": 1,
+      "title": "Holdomor and stuff",
+      "subtitle": "Rank and file perperators in Soviet Ukraine",
+      "date": "2022-04-23T18:25:43.511Z", 
+      "data": {
+        "pdfUrl": "/assets/The_Violence_of_Hunger_Holodomor.pdf",
+        "remoteUrl": null
+      },
+      "tags": ["Ukraine", "Violence", "Radboud University"]
+    }
+  ]
+}
