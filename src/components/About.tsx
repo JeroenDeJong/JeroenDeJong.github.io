@@ -5,15 +5,15 @@ import { Education } from "./About/Education";
 
 
 const ChronaCustomStyles = createGlobalStyle`
-
   .card-sub-title {
     color: black !important;
   }
-
 `
 
 const AboutContainer = styled.div`
-  margin: 0 100px;
+  @media (min-width: 712px) {
+    margin: 0 100px;
+  }
 `
 
 const SectionTitle = styled.h2`

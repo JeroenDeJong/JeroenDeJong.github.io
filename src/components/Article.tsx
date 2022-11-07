@@ -26,6 +26,11 @@ const ArticlePage = styled(Page)`
     margin: auto;
     box-shadow: 0 30px 40px 0 rgb(16 36 94 / 20%);
     border-radius: 15px;
+
+    @media (max-width: 712px) {
+      width: 100% !important;
+      height: 100% !important;
+    }
   }
 `
 

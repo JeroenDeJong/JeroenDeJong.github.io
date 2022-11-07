@@ -1,31 +1,54 @@
 import styled from "styled-components"
 import {Geo, Linkedin, Twitter, EnvelopeCheckFill, MapFill, Translate, HospitalFill, FlagFill} from 'react-bootstrap-icons'
 
+/**
+ * In principle: if its mobile we use flexbox,
+ * if its desktop: we use float left, and right due to the shape-outside requirements. 
+ */
+
 const RoundedImage = styled.img`
   border-radius: 50%;
   width: 300px;
   height: 300px;
   box-shadow: 0 30px 40px 0 rgb(16 36 94 / 30%);
   border: 3px solid #FB5607;
-  float: left;
-  shape-outside: circle(50%);
+
+  @media (min-width: 712px) {
+    float: left;
+    shape-outside: circle(50%);
+  }
+
+  @media (max-width: 712px) {
+    margin: auto;
+    margin-bottom: 20px;
+  }
 `
 
 const ImageContainer = styled.div`
-  height: calc(300px + 6px);
   margin-top: 40px;
   margin-bottom: 40px;
 
-  position: relative;
-  left: calc(50% - 150px);
+  @media (min-width: 712px) {
+    height: calc(300px + 6px);
+    position: relative;
+    left: calc(50% - 150px);
+  }
+
+  @media (max-width: 712px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 const IconContainer = styled.div`
   display: block;
   color: black;
   margin: 5px 0;
-  left: 15px;
-  position: relative;
+
+  @media (min-width: 712px) {
+    left: 15px;
+    position: relative;
+  }
 
   span {
     margin-left: 5px;
@@ -34,14 +57,22 @@ const IconContainer = styled.div`
   svg {
     vertical-align: middle;
   }
-
 `
+
+const InformationContainer = styled.div`
+  @media (max-width: 712px) {
+    margin: auto;
+  }
+`
+
+
 
 function Personal() {
   return (
- <ImageContainer>
+    <ImageContainer>
       <RoundedImage src="assets/IMG_5551.jpeg"/>
 
+      <InformationContainer>
         <IconContainer>
           <Geo/>
           <span>Nijmegen, The Netherlands</span>
@@ -93,6 +124,7 @@ function Personal() {
           <MapFill/>
           <span>Personal Travel website</span>
         </IconContainer>
+      </InformationContainer>
     </ImageContainer>
   )
 }
