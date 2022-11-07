@@ -44,15 +44,22 @@ function Articles() {
 }
 
 function ArticlesList() {
+  // here im using Korean format since they use year month day. And tbh i am too lazy right now to fix this. 
+  const formatter = new Intl.DateTimeFormat('ko-KR')
+
   const list = articlesConfig.articles.map(article => {
+    const date = formatter.format(new Date(article.date));
     return (
       <ArticleItem key={article.id}>
         <ArticleDate>
-          {article.date}
+          {date}
         </ArticleDate>
         <ArticleLink to={`/articles/${article.id}`}>
           {article.title}
         </ArticleLink>
+        {/* <span>
+        {article.subtitle}
+        </span> */}
       </ArticleItem>
     )
   })

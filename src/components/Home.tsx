@@ -63,7 +63,7 @@ function Home() {
 
       <Naviation>
         <LinkItem id="about" to="/about">About</LinkItem>
-        <LinkItem id="works" to="/works">Works</LinkItem>
+        <LinkItem id="projects" to="/projects">Works</LinkItem>
         <LinkItem id="articles" to="/articles">Articles</LinkItem>
       </Naviation>
     </Container>

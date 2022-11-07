@@ -1,8 +1,12 @@
 import { Link, Outlet, Route, Routes, useLocation } from "react-router-dom";
+import { About } from "./components/About";
 import { Article } from "./components/Article";
 import { Articles } from "./components/Articles";
 import { Header } from './components/Header'
 import { Home } from "./components/Home";
+import { Projects } from "./components/Projects";
+
+const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === 'development'
 
 function App() {
   const location = useLocation();
@@ -11,9 +15,11 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout header={!isHome}/>}>
         <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="about" element={<About/>} />
         <Route path="articles" element={<Articles />} />
-        <Route path="projects" element={<Projects />} />
+        {isDev && (
+          <Route path="projects" element={<Projects />} />
+        )}
         <Route path="articles/:id" element={<Article/>} />
         <Route path="*" element={<NoMatch />} />
       </Route>
@@ -27,22 +33,6 @@ function Layout({header}: {header: boolean}) {
       {header && <Header/>} 
       <Outlet />
     </>
-  );
-}
-
-function About() {
-  return (
-    <div>
-      <h2>This is a place for my CV and stuff</h2>
-    </div>
-  )
-}
-
-function Projects() {
-  return (
-    <div>
-      <h2>Projects -- Mostly a place for my website: JeroenTravel</h2>
-    </div>
   );
 }
 
