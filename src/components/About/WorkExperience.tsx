@@ -1,13 +1,6 @@
 import { Chrono } from "react-chrono"
 import { TimelineItemModel } from "react-chrono/dist/models/TimelineItemModel"
 
-
-// February 2017 – December 2020
-// Living Map, Bath, United Kingdom
-
-// December 2020 – September 2021
-// KPV LAB, Edinburgh, United Kingdom
-
 const chronoTheme = {
   primary: '#FF006E',
   secondary: 'black',
@@ -31,21 +24,24 @@ function LivingMap() {
   return (
     <div>
       <p style={{marginBottom: '20px'}}>
-        At Living Map, I started out as a GIS intern, but after completion got hired as a full-time developer. 
-        In the last few years, we have been busy crafting a WebGL based mapping product with various map data layers, 
-        to help customers make sense of their geospatial environments.
+        At Living Map, I started out as a GIS developer, but quickly thereafter switched to the front-end team and then got hired as a full-time developer. 
+        In the 3 and a half years that I have worked there, we have been busy crafting a WebGL based mapping product with various map data layers and unique smart UX workflows
+        to help users make sense and also navigate their indoor geospatial environments.
       </p>
       
       <ul style={{listStyle: 'inside'}}>
         <li>
-          Made use of different APIs and websites to retrieve useable data
+          I was responsible for leading the conversation between our dev team and the design team, to ensure a smooth implementation of new UX and UI features. 
         </li>
         <li>
-          Gained experience in collaborating with design teams to create rich and complex UX workflows.
+          Implemented  various different ways of data visualisations to support UX at the right times
+        </li>
+        <li>
+          Gained experience in collaborating with various other teams as well as working with management to effectively communicate technical issues and challenges. 
         </li>
         <li>Worked on backend services and how to set up a mutually understood and well documented API structure</li>
-        <li>Made use of SQL like PostgreSQL and PostGIS and other data management tools to maintain and create data</li>
-        <li>Worked with tools such as Mapbox, WebGL, D3 and react to add a richer experience to our product</li>
+        <li>I champiogned new technologies into our software stack to effectively combat longstanding software design issues</li>
+        <li>Worked with tools such as React, Redux, Mapbox, WebGL, D3 and react to add a richer experience to our product</li>
       </ul>
     </div>
   )
@@ -55,18 +51,18 @@ function KPVLab() {
   return (
     <div>
       <p style={{marginBottom: '20px'}}>
-        Moving to KPV was an important step in search for a new challenge. KPV works on a very advanced 3D graphical graphing application with very modern development tool chains, resulting in challenging problems.
+        Moving to KPV was an important change because I was overdue for a new challenge. KPV Labs certainly provided that by working on a very advanced and technically interesting 3D graphical graphing application with modern development tool chains.
       </p>
 
       <ul style={{listStyle: 'inside'}}>
         <li>
-          Gained experience working in a different company, different culture, and other people
+          Gained experience working in a different company with different approaches
         </li>
         <li>
-          Gained experience working with 3d software, and the associated way of solving problems
+          Gained more experience working with 3d software, and the associated way through which such problems should be solved 
         </li>
         <li>
-          Was able to structure code in a functional way
+          Was able to structure code in a functional way, and to apply the Test Driven Development (TDD) software philosophy
         </li>
       </ul>
     </div>
