@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 
 const root = ReactDOM.createRoot(
@@ -36,9 +36,9 @@ const CoreStyles = createGlobalStyle`
 root.render(
   <React.StrictMode>
     <CoreStyles/>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
