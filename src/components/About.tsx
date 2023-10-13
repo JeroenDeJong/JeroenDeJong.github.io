@@ -1,14 +1,7 @@
-import styled, { createGlobalStyle } from "styled-components"
-import { WorkExperience } from "./About/WorkExperience";
+import styled from "styled-components"
+import { LifeExperience } from "./About/LifeExperience";
 import { ElevatorPitch, Personal } from "./About/Personal";
-import { Education } from "./About/Education";
 
-
-const ChronaCustomStyles = createGlobalStyle`
-  .card-sub-title {
-    color: black !important;
-  }
-`
 
 const AboutContainer = styled.div`
   @media (min-width: 712px) {
@@ -17,7 +10,7 @@ const AboutContainer = styled.div`
 `
 
 const SectionTitle = styled.h2`
-  margin-top: 30px;
+  margin: 30px 0;
   border-bottom: 5px solid black;
 `
 
@@ -35,16 +28,11 @@ function Section({ title, children }: { title: string, children: any }) {
 function About() {
   return (
     <AboutContainer>
-      <ChronaCustomStyles/>
       <Personal/>
       <ElevatorPitch/>
 
-      <Section title="Education">
-        <Education/>
-      </Section>
-
-      <Section title="Work Experience">
-        <WorkExperience/>
+      <Section title="Life Experience">
+        <LifeExperience/>
       </Section>
 
       <div style={{height: '100px'}}/>

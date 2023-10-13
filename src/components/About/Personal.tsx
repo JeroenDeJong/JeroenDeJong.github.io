@@ -95,7 +95,7 @@ function Personal() {
 
         <IconContainer>
           <Translate/>
-          <span>Limited German Proficianty</span>
+          <span>Limited German</span>
         </IconContainer>
 
         <IconContainer>
