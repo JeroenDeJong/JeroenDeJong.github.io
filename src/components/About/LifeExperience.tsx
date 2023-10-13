@@ -106,6 +106,9 @@ function LifeExperience() {
           <ExperienceTitle>Msc in Human Geography at Radboud University</ExperienceTitle>
           <ExperiencePeriod>September 2021 - November 2023</ExperiencePeriod>
           
+          My time working as a software developer taught me the importance of think before you act. I realised, i wanted to address this by taking a more theorethical 
+          approach to my career. I decided to work towards achieving a masters degree at the Radboud University. I chose this degree because this topic has always been of much personal interest to me.
+
         </div>
       </ExperienceContainer>
 
@@ -136,7 +139,7 @@ function LifeExperience() {
           <ExperienceImage src="/assets/HU.png"/>
         </div>
         <div>
-          <ExperienceTitle>BSc Geodesy and Geo-informatics</ExperienceTitle>
+          <ExperienceTitle>BSc Geodesy and Geo-informatics at the Hogeschool Utrecht</ExperienceTitle>
           <ExperiencePeriod>August 2013 - August 2017</ExperiencePeriod>
           
         </div>
