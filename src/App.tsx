@@ -7,8 +7,6 @@ import { Home } from "./components/Home";
 import { Projects } from "./components/Projects";
 import styled from "styled-components";
 
-const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === 'development'
-
 function App() {
   const location = useLocation();
   const isHome = location.pathname === '/'
@@ -18,9 +16,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About/>} />
         <Route path="articles" element={<Articles />} />
-        {isDev && (
-          <Route path="projects" element={<Projects />} />
-        )}
+        <Route path="projects" element={<Projects />} />
         <Route path="articles/:id" element={<Article/>} />
         <Route path="*" element={<NoMatch />} />
       </Route>
