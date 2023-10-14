@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import articlesConfig from '../config.json'
+import { Section } from "./About";
 
 const Container = styled.main`
   margin-top: 90px;
@@ -33,13 +34,34 @@ const ArticleDate = styled.div`
   color: #2d3748;
 `
 
+const ArticleTeaser = styled.p`
+  font-style: italic;
+  margin-top: 4px;
+`
+
+const ArticleTag = styled.div`
+  background-color: #dde3e7;
+  width: fit-content;
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: #435362;
+`
+
+const ArticleTagContainer = styled.div`
+  margin: 10px 0;
+  display: flex;
+  column-gap: 5px;
+`
+
 function Articles() {
   return (
-    <Container>
-      <ul>
-        <ArticlesList/>
-      </ul>
-    </Container>
+    <Section title="Articles">
+      <Container>
+        <ul>
+          <ArticlesList/>
+        </ul>
+      </Container>
+    </Section>
   )
 }
 
@@ -49,6 +71,11 @@ function ArticlesList() {
 
   const list = articlesConfig.articles.map(article => {
     const date = formatter.format(new Date(article.date));
+
+    const tags = article.tags.map(tag => {
+      return <ArticleTag>{tag}</ArticleTag>;
+    })
+
     return (
       <ArticleItem key={article.id}>
         <ArticleDate>
@@ -57,14 +84,21 @@ function ArticlesList() {
         <ArticleLink to={`/articles/${article.id}`}>
           {article.title}
         </ArticleLink>
-        {/* <span>
-        {article.subtitle}
-        </span> */}
+        <ArticleTagContainer>
+          {tags}
+        </ArticleTagContainer>
+        <ArticleTeaser>
+          {article.subtitle}
+        </ArticleTeaser>
       </ArticleItem>
     )
   })
 
   return <>{list}</>
 }
+
+// exterior #dde3e7
+// int #435362
+
 
 export { Articles }

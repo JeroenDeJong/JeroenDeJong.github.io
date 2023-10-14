@@ -3,18 +3,12 @@ import { LifeExperience } from "./About/LifeExperience";
 import { ElevatorPitch, Personal } from "./About/Personal";
 
 
-const AboutContainer = styled.div`
-  @media (min-width: 712px) {
-    margin: 0 100px;
-  }
-`
-
 const SectionTitle = styled.h2`
   margin: 30px 0;
   border-bottom: 5px solid black;
 `
 
-function Section({ title, children }: { title: string, children: any }) {
+export function Section({ title, children }: { title: string, children: any }) {
   return (
     <>
       <SectionTitle>
@@ -27,7 +21,7 @@ function Section({ title, children }: { title: string, children: any }) {
 
 function About() {
   return (
-    <AboutContainer>
+    <>
       <Personal/>
       <ElevatorPitch/>
 
@@ -36,7 +30,7 @@ function About() {
       </Section>
 
       <div style={{height: '100px'}}/>
-    </AboutContainer>
+    </>
   )
 }
 

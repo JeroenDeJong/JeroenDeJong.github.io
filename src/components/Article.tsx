@@ -1,4 +1,4 @@
-import { useLocation, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import articlesConfig from '../config.json'
 import { Document, Page, pdfjs } from 'react-pdf'
 import { useState } from "react"

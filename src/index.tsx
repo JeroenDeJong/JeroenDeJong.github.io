@@ -13,8 +13,6 @@ const root = ReactDOM.createRoot(
 const CoreStyles = createGlobalStyle`
   body {
     margin: 20px;
-    width: calc(100% - 20px - 20px);
-    height: calc(100vh - 20px - 20px);
   }
 
   * {

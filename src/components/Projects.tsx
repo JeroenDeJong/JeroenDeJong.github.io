@@ -1,46 +1,43 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
+import { ExperienceContainer, ExperienceImage, ExperienceTitle } from "./About/FlexContent"
+import { Section } from "./About"
 
+const Container = styled.main`
+  margin-top: 90px;
+  margin-bottom: 50px;
 
-const Container = styled.div`
-  margin-top: 75px;
   display: flex;
-  flex-wrap: wrap;
-`
-
-const ProjectItemLink = styled.a`
-  width: 400px;
-  height: 300px;
-  margin: 10px;
-
-  --gradient-to-color: #FF006E;
-  --gradient-from-color: #FB5607;
-  --gradient-color-stops: var(--gradient-from-color),var(--gradient-to-color,rgba(251,86,7,0));
-  border: 3px solid transparent;
-  border-image-slice: 20;
-  border-image-source: linear-gradient(to right,var(--gradient-color-stops));
-
+  flex-direction: column;
+  row-gap: 50px;
 `
 
 
 function Projects() {
   return (
-    <Container>
-      <ProjectItemLink href="http://www.jeroentravel.com">
-      <h3>
-        Jeroen Travel - My Personal Travel Tracker
-      </h3>
+    <Section title="Projects">
+      <Container>
+        <ExperienceContainer>
+          <>
+            <div>
+              <ExperienceImage src="/assets/JeroenTravel.png"/>
+            </div>
+            <div>
+              <ExperienceTitle as='a' rel="noopener noreferrer" href="http://www.jeroentravel.com">Jeroen Travel - My Personal Travel Tracker</ExperienceTitle>
+              <p>
+                I made this personal travel website out of a longing for a better experience during travel as well as the ability for a more detailed geographical representation of my travels.
+                I have developed an admin portal for this, which i can acces to upload gps tracks data as well as pictures. From the pictures uploaded, the GPS data will automaticallically be pulled out of the picture,
+                and these picture will then also be represented on the map. 
 
-      <span>
-        Track here my past, and current travels. 
-      </span>
+                Furthermore it is also possible to write stories on every entry. 
 
-      </ProjectItemLink>
-      <ProjectItemLink/>
-      <ProjectItemLink/>
-      <ProjectItemLink/>
-
-    </Container>
+                This project is in active work in progress, so some features might still require improvements. 
+              </p>
+            </div>
+          </>
+        </ExperienceContainer>
+      </Container>
+    </Section>
   )
 }
 

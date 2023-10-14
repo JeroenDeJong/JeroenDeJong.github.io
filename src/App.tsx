@@ -5,6 +5,7 @@ import { Articles } from "./components/Articles";
 import { Header } from './components/Header'
 import { Home } from "./components/Home";
 import { Projects } from "./components/Projects";
+import styled from "styled-components";
 
 const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === 'development'
 
@@ -27,11 +28,19 @@ function App() {
   );
 }
 
+const Container = styled.div`
+  @media (min-width: 712px) {
+    margin: 0 100px;
+  }
+`
+
 function Layout({header}: {header: boolean}) {
   return (
     <>
       {header && <Header/>} 
-      <Outlet />
+      <Container>
+        <Outlet />
+      </Container>
     </>
   );
 }
