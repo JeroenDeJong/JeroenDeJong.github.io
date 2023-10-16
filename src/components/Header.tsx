@@ -1,8 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
-
-const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === 'development'
 
 const TopContainer = styled.header`
   background-color: white;
@@ -59,9 +56,7 @@ function Header() {
         <TopSmall>
           <TopInfoLink id="about" to="/about">About</TopInfoLink>
           <TopInfoLink id="articles" to="/articles">Articles</TopInfoLink>
-          {isDev && (
-            <TopInfoLink id="projects" to="/projects">Projects</TopInfoLink>
-          )}
+          <TopInfoLink id="projects" to="/projects">Projects</TopInfoLink>
         </TopSmall>  
       </nav>
     </TopContainer>

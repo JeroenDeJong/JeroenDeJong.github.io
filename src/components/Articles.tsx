@@ -41,16 +41,18 @@ const ArticleTeaser = styled.p`
 
 const ArticleTag = styled.div`
   background-color: #dde3e7;
-  width: fit-content;
   padding: 2px 8px;
+  margin: 3px 0;
   border-radius: 20px;
   color: #435362;
+  text-wrap: nowrap;
 `
 
 const ArticleTagContainer = styled.div`
   margin: 10px 0;
   display: flex;
   column-gap: 5px;
+  flex-wrap: wrap;
 `
 
 function Articles() {
