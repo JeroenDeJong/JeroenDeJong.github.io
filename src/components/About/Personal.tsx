@@ -129,32 +129,37 @@ function Personal() {
   )
 }
 
+const TextAlignParagrah = styled.p`
+  text-align: justify;
+`
+
 function ElevatorPitch() {
-
   return (
-    <div>
-      <p>
-      Hi, Welcome to my personal website. My name is Jeroen de Jong, born in the north of The Netherlands. 
-      I am pursuing a career as a student of violent conflicts, with a specific interest in Eastern Europe, Caucasus and Central Asia.
-      My aim is to highlight many of the under- or un- told stories from this region. 
-      Me, and many other scholars agree how this region is systematically under researched (The the civil war in Tajikistan is an example hereof). 
-      Specific research focus right now are very broad, but key topics that so far spark my interest are: legitimacy, de-facto states, non state actors
-      </p>
-      <br/>
-      <p>
-      Currently, I am studying at the Radboud University in Nijmegen doing my masters degree in Human Geography: Conflicts, Territories and Identities. 
-      In this study I am learning alot more about conflicts, both philosphically and theorethically. 
-      I have found that the study of violence interest me tremendously. The puzzeling element of violence and the high stakes thereof is very intriguing. 
-      Therefore I believe that bringing nuance and understanding of violent conflicts to the wider public an apt goal for me to chased after. 
-      </p>
-      <br/>
-      <p>
-      My background, and hence this website, lies not only in politics and geography but also in software development. 
-  I have worked in The Netherlands, England and Scotland as a software developer, developing data visualisation applications on the web. 
-      </p>
-    </div>
-  )
+    <>
+      <TextAlignParagrah>
+        Hi, Welcome to my personal website. My name is Jeroen de Jong, born and raised in the north of The Netherlands. 
+        At the end of my bachelors in Geo-informatics, I found a lot of joy in solving geographical problems. The appropriate outlet i found for this was software development.
+        I came to thoroughly enjoy working with like minded people on building complex and user friendly applications. 
+        Specifically frontend development was something I enjoyed due to the ease of accesibility for the user. 
+        I came to love working with <u>TypeScript</u>, <u>React</u>, <u>Vue</u>, <u>Mapbox</u>, and other frontend tools to be able to create even beter user experiences. 
 
+        I have worked as a software developer for almost 5 years now, but I concluded to myself that I was missing the level of theorethical thinking i thought i needed to be even better at my job
+        As a result, I decided to pursue a Master degree in Geography at the Radboud University in Nijmegen. 
+
+        Now that I've finished this I am once again looking for a place where I can help build awesome (geographical) software that aim to help people in interesting ways. 
+      </TextAlignParagrah>
+      <br/>
+      <TextAlignParagrah>
+        During my BSc I was also able to work alot with geographical databases. As such I have maintained but also structured and integrated databases services with backend services to provide the most optional computational layers. 
+      </TextAlignParagrah>
+      <br/>
+      <TextAlignParagrah>
+        From a person point of view, my background lies not only in software development, but also in (geo)politics, culture and conflicts.
+        During my masters degree at the Radboud Unversity I have had the oportunity to write various essays, analytical papers and work on projects to research and investiage various political conflicts around the world.
+        Most of these papers you can find in my Article section on this web page. 
+      </TextAlignParagrah>
+    </>
+  )
 }
 
 
