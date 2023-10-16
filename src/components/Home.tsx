@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -48,17 +49,69 @@ const LinkItem = styled(Link)`
   }
 `
 
+const MainTitleLine = styled.h1`
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end
+  }
+`
+
+const CharacteristicText = styled.div`
+  font-size: 30px;
+  font-weight: 200;
+`
+
+const text = ['Frontend Developer', 'Geography Geek', 'Data Enthusiast']
+
 function Home() {
+  const [index, setIndex] = useState(0);
+  const [size, setSize] = useState(0);
+  const [direction, setDirection] = useState('forward');
+  const isFull = size === text[index].length
+
+  // direction effect
+  useEffect(() => {
+    const currentText = text[index];
+    if (size >= currentText.length) {
+      setDirection(direction === 'forward' ? 'backward' : 'forward')
+    }
+  }, [index, size])
+
+  useEffect(() => {
+    if (size === 0 && direction === 'backward') {
+      setIndex((state) => (state + 1) % text.length)
+      setDirection('forward')
+    }
+  }, [size, direction])
+
+  // effect for displaying the current text item.
+  useEffect(() => {
+    const isForward = direction === 'forward'
+    const timerID = setTimeout(() => {
+      if (isForward) setSize(size + 1)
+      else setSize(size - 1)
+    }, isFull ? 2500 : isForward ? 100 : 50);
+
+    return () => clearTimeout(timerID);
+  }, [direction, size]);
+
+  const currentText = text[index].substring(0, size)
+
   return (
     <Container>
-      <h1>
+      <MainTitleLine>
         <Title>
           Jeroen de Jong
         </Title>
-      </h1>
+        <CharacteristicText>
+          {currentText} {!isFull && '|'}
+        </CharacteristicText>
+      </MainTitleLine>
       <Description>
-        I am a <strong>Human Geography master student</strong> at the Radboud University in Nijmegen.
-        I've previously worked as a Frontend Developer in England and Scotland.
+        I am <strong>Frontend Web App Developer</strong> with a love for visualizing complex geographical data. 
+        Previously I have worked as a Frontend developer in both England and Scotland.
+        Currently, I am back in The Netherlands after having finished my masters degree and am currently open to any work opportunity!
       </Description>
 
       <Naviation>
