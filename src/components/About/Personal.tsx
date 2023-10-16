@@ -31,7 +31,7 @@ const ImageContainer = styled.div`
   @media (min-width: 712px) {
     height: calc(300px + 6px);
     position: relative;
-    left: calc(50% - 150px);
+    left: calc(50% - 250px);
   }
 
   @media (max-width: 712px) {

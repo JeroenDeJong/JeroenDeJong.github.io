@@ -8,9 +8,9 @@ export function JobExperienceAtLivingMap() {
   return (
     <>
       <p style={{marginBottom: '20px'}}>
-        At Living Map, I started out as a GIS developer, but quickly thereafter switched to the front-end team and then got hired as a full-time developer. 
+        At Living Map, I started out as a GIS developer, but quickly thereafter switched to the front-end team and then got hired as a full-stack developer. 
         In the 3 and a half years that I have worked there, we have been busy crafting a WebGL based mapping product with various map data layers and unique smart UX workflows
-        to help users make sense and also navigate their indoor geospatial environments.
+        to help users make sense and also navigate their indoor geospatial environments. Within the team i grew to become the frontend team lead, and was responsible for the web apps.
       </p>
       
       <ExperienceBulletPoints>

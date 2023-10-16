@@ -26,7 +26,7 @@ function App() {
 
 const Container = styled.div`
   @media (min-width: 712px) {
-    margin: 0 100px;
+    margin: 0 200px;
   }
 `
 

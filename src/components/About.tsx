@@ -25,7 +25,7 @@ function About() {
       <Personal/>
       <ElevatorPitch/>
 
-      <Section title="Life Experience">
+      <Section title="Experience and Education">
         <LifeExperience/>
       </Section>
 
