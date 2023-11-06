@@ -76,6 +76,17 @@
         "remoteUrl": null
       },
       "tags": ["borders", "border", "European Union", "Radboud University"]
+    },
+    {
+      "id": 7,
+      "title": "Kaartkleuren - Algoritmes voor het inkleuren van grafen",
+      "subtitle": "In dit verslag wordt een aanpak van het grafenkleurprobleem gepresenteerd. De verschillende algoritmes en heuristieken die zijn gebruikt en toegepast op geografische kaarten en sociale netwerken worden uitgelegd en de resultaten worden met elkaar vergeleken",
+      "date": "2015-12-18", 
+      "data": {
+        "pdfUrl": "/assets/bachelor/finalreport_teammushroom.pdf",
+        "remoteUrl": null
+      },
+      "tags": ["Graphs", "Algorithms", "University of Amsterdam"]
     }
   ]
 }
