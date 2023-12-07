@@ -27,18 +27,18 @@ export const ExperienceTitle = styled.h3`
   background-clip: text;
 
   font-size: 23px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-weight: bold;
 `
 
 export type Props = {
   imageSource: string,
-  children: any,
+  period: string,
   title: string,
-  as?: any
+  children: any,
 }
 
-export function FlexContentWithImage(props: Props) {
+export function LifeExperienceItem(props: Props) {
   const {imageSource, children, title} = props
 
   return (
@@ -48,7 +48,8 @@ export function FlexContentWithImage(props: Props) {
           <ExperienceImage src={imageSource}/>
         </div>
         <div>
-          <ExperienceTitle as={props.as}>{title}</ExperienceTitle>
+          <ExperienceTitle>{title}</ExperienceTitle>
+          <h5>{props.period}</h5>
           {children}
         </div>
       </>

@@ -74,7 +74,7 @@ function Home() {
   useEffect(() => {
     const currentText = text[index];
     if (size >= currentText.length) {
-      setDirection(direction === 'forward' ? 'backward' : 'forward')
+      setDirection(d => d === 'forward' ? 'backward' : 'forward')
     }
   }, [index, size])
 
@@ -94,7 +94,7 @@ function Home() {
     }, isFull ? 2500 : isForward ? 100 : 50);
 
     return () => clearTimeout(timerID);
-  }, [direction, size]);
+  }, [direction, size, isFull]);
 
   const currentText = text[index].substring(0, size)
 

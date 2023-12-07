@@ -139,26 +139,22 @@ function ElevatorPitch() {
     <>
       <TextAlignParagrah>
         Hi, Welcome to my personal website. My name is Jeroen de Jong, born and raised in the north of The Netherlands. 
-        At the end of my bachelors in Geo-informatics, I found a lot of joy in solving geographical problems. The appropriate outlet i found for this was software development.
-        I came to thoroughly enjoy working with like minded people on building complex and user friendly applications. 
-        Specifically frontend development was something I enjoyed due to the ease of accesibility for the user. 
-        I came to love working with <u>TypeScript</u>, <u>React</u>, <u>Vue</u>, <u>Mapbox</u>, and other frontend tools to be able to create even beter user experiences. 
-
-        I have worked as a software developer for almost 5 years now, but I concluded to myself that I was missing the level of theorethical thinking i thought i needed to be even better at my job
+        At the end of my bachelors in Geo-informatics, I found a lot of joy in solving geographical problems. Specifically the combination between software development and data visualisation I found my passion. 
+        I however came to thoroughly enjoy software development in general because it allows me to solve problems and be creative. 
+        Working with like minded people on building complex and user friendly applications is very fun to me. 
+        Specifically frontend development is something I really enjoyed because I personnaly find a good design to be extremely important.
+        I came to love working with TypeScript, React, and many other technologies that allow me to be able to create even beter user experiences. 
+      </TextAlignParagrah>
+      <br/>
+      <TextAlignParagrah>
+        I have worked as a software developer for almost 5 years now, but I concluded that I was missing some more theorethical thinking level and research background.
         As a result, I decided to pursue a Master degree in Geography at the Radboud University in Nijmegen. 
+      </TextAlignParagrah>
+      <br/>
+      <TextAlignParagrah>
+        Now that I've finished this I am once again looking for a place where I can help build awesome software, and apply my working experience together with my new-found academical skills.
+      </TextAlignParagrah>
 
-        Now that I've finished this I am once again looking for a place where I can help build awesome (geographical) software that aim to help people in interesting ways. 
-      </TextAlignParagrah>
-      <br/>
-      <TextAlignParagrah>
-        During my BSc I was also able to work alot with geographical databases. As such I have maintained but also structured and integrated databases services with backend services to provide the most optional computational layers. 
-      </TextAlignParagrah>
-      <br/>
-      <TextAlignParagrah>
-        From a person point of view, my background lies not only in software development, but also in (geo)politics, culture and conflicts.
-        During my masters degree at the Radboud Unversity I have had the oportunity to write various essays, analytical papers and work on projects to research and investiage various political conflicts around the world.
-        Most of these papers you can find in my Article section on this web page. 
-      </TextAlignParagrah>
     </>
   )
 }

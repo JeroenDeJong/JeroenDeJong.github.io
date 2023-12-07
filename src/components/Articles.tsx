@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import articlesConfig from '../config.json'
 import { Section } from "./About";
+import { Tag, TagContainer } from "./Tag";
 
 const Container = styled.main`
   margin-top: 90px;
@@ -39,22 +40,6 @@ const ArticleTeaser = styled.p`
   margin-top: 4px;
 `
 
-const ArticleTag = styled.div`
-  background-color: #dde3e7;
-  padding: 2px 8px;
-  margin: 3px 0;
-  border-radius: 20px;
-  color: #435362;
-  text-wrap: nowrap;
-`
-
-const ArticleTagContainer = styled.div`
-  margin: 10px 0;
-  display: flex;
-  column-gap: 5px;
-  flex-wrap: wrap;
-`
-
 function Articles() {
   return (
     <Section title="Articles">
@@ -75,7 +60,7 @@ function ArticlesList() {
     const date = formatter.format(new Date(article.date));
 
     const tags = article.tags.map(tag => {
-      return <ArticleTag>{tag}</ArticleTag>;
+      return <Tag key={tag}>{tag}</Tag>;
     })
 
     return (
@@ -86,9 +71,9 @@ function ArticlesList() {
         <ArticleLink to={`/articles/${article.id}`}>
           {article.title}
         </ArticleLink>
-        <ArticleTagContainer>
+        <TagContainer>
           {tags}
-        </ArticleTagContainer>
+        </TagContainer>
         <ArticleTeaser>
           {article.subtitle}
         </ArticleTeaser>

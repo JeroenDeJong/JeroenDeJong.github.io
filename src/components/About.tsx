@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { LifeExperience } from "./About/LifeExperience";
 import { ElevatorPitch, Personal } from "./About/Personal";
+import { Tag, TagContainer } from "./Tag";
 
 
 const SectionTitle = styled.h2`
@@ -27,6 +28,35 @@ function About() {
 
       <Section title="Experience and Education">
         <LifeExperience/>
+      </Section>
+
+      <Section title="Skills">
+        <TagContainer>
+          <Tag>React</Tag>
+          <Tag>Redux</Tag>
+          <Tag>TypeScript</Tag>
+          <Tag>NodeJS</Tag>
+          <Tag>Styled Components</Tag>
+          <Tag>Mapbox</Tag>
+
+          <Tag>(S)CSS</Tag>
+          <Tag>Vite</Tag>
+          <Tag>Scala</Tag>
+          <Tag>Git</Tag>
+          <Tag>Jest</Tag>
+          <Tag>Storybooks</Tag>
+
+          <Tag>Data Visualizations</Tag>
+          <Tag>(Geospatial) data</Tag>
+          <Tag>PostgreSQL</Tag>
+          <Tag>REST APIs</Tag>
+          <Tag>Swagger documentation</Tag>
+
+          <Tag>Scrum & Agile management</Tag>
+          <Tag>Continous Integration</Tag>
+          <Tag>Continous Deployment</Tag>
+          <Tag>Kubernetes, AWS, GCP</Tag>
+        </TagContainer>
       </Section>
 
       <div style={{height: '100px'}}/>
