@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom"
 import styled from "styled-components"
-import { ExperienceContainer, ExperienceImage, ExperienceTitle } from "./About/FlexContent"
+import { ExperienceContainer, ExperienceImage, ExperienceTitle } from "./About/LifeExperienceItem"
 import { Section } from "./About"
 
 const Container = styled.main`
@@ -18,9 +17,9 @@ function Projects() {
     <Section title="Projects">
       <Container>
         <ExperienceContainer>
-          <div>
+          <a rel="noopener noreferrer" href="http://www.jeroentravel.com">
             <ExperienceImage src="/assets/JeroenTravel.png"/>
-          </div>
+          </a>
           <div>
             <ExperienceTitle as='a' rel="noopener noreferrer" href="http://www.jeroentravel.com">Jeroen Travel - My Personal Travel Tracker</ExperienceTitle>
             <p>
@@ -35,9 +34,9 @@ function Projects() {
           </div>
         </ExperienceContainer>
         <ExperienceContainer>
-          <div>
+          <a rel="noopener noreferrer" href="http://www.jeroenblog.com/textual-clock">
             <ExperienceImage src="/assets/textual-clock.png"/>
-          </div>
+          </a>
           <div>
             <ExperienceTitle as='a' rel="noopener noreferrer" href="http://www.jeroenblog.com/textual-clock">Time through spoken words</ExperienceTitle>
             <p>
