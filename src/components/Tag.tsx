@@ -6,7 +6,7 @@ export const Tag = styled.div`
   margin: 3px 0;
   border-radius: 20px;
   color: #435362;
-  text-wrap: nowrap;
+  white-space: nowrap;
 `
 
 export const TagContainer = styled.div`

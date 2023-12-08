@@ -56,6 +56,9 @@ function About() {
           <Tag>Continous Integration</Tag>
           <Tag>Continous Deployment</Tag>
           <Tag>Kubernetes, AWS, GCP</Tag>
+          <Tag>AWS</Tag>
+          <Tag>GCP</Tag>
+
         </TagContainer>
       </Section>
 

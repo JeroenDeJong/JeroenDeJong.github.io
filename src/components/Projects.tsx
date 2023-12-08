@@ -11,7 +11,6 @@ const Container = styled.main`
   row-gap: 50px;
 `
 
-
 function Projects() {
   return (
     <Section title="Projects">

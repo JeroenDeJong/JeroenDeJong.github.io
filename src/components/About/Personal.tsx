@@ -44,7 +44,7 @@ const IconContainer = styled.div`
   display: block;
   color: black;
   margin: 5px 0;
-  text-wrap: nowrap;
+  white-space: nowrap;
 
   @media (min-width: 712px) {
     left: 15px;

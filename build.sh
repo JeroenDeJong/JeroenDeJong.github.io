@@ -15,3 +15,24 @@ mv ./dist ../../build/textual-clock
 cd ..
 cd ..
 rm -rf modules/textual-clock/
+
+# cp -r ./build /tmp/website-build
+
+
+
+git worktree add dist gh-pages --no-checkout
+
+# save .git file from being deleted by the generator
+cp -a ./build/. ./dist/ 
+
+cd dist
+
+git checkout origin/gh-pages -- CNAME 
+
+
+git commit -m "PAGES: upload v1.8"
+git push
+
+cd .. 
+git worktree remove dist
+rm -rf /dist
